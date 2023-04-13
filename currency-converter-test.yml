@@ -1,5 +1,5 @@
 server:
-  port: '{cypher}b97a22b328a740dea2864dc2913dbcfa787bc426cb8f9d0cd8389e1b3540f90a'
+  port: '{cipher}b97a22b328a740dea2864dc2913dbcfa787bc426cb8f9d0cd8389e1b3540f90a'
 spring:
   datasource:
     type: org.postgresql.jdbc2.optional.SimpleDataSource
