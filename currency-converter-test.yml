@@ -6,9 +6,9 @@ spring:
     #username: postgres
     #password: password
     #url: jdbc:postgresql://127.0.1.1:5432/arqui
-    username: ${USERNAME_DB:postgres}
-    password: ${PASSWORD:password}
-    url: ${URL:jdbc:postgresql://127.0.1.1:5432/arqui}
+    username: '{cipher}5380d7b6e75acb5d2dca10de85e112c6940f32d51717786d04db4ac3f9b2ef8f'
+    password: '{cipher}0c778630389245b2fc0684e1f60b7884b70ced7dcf04f35ffe4802122f791b82'
+    url: '{cipher}0246ac244e8465dfb456fb65bef5a65527ed989af89945cebfec5af66333edd577ae41c439b8ad48a793a678d85e23086b253786d24fbdb250b639914e4f3a46'
   
   jpa:
     hibernate:
@@ -18,14 +18,19 @@ spring:
   application:
     name: currency-converter
 
+# Configuramos el cliente de la api de currency
+currency:
+  url: '{cipher}71e759262f1805e630a017fe64dfee19181895d9dbece1597f5d5f722fa4be3fdd4765b78fbe6d1e2d7383707ad6ff66e5c8e2059a21ca9e431f0f34c31258e308277fa60addcb5cfdd018041a718748'
+  api_key: '{cipher}d22405d1dfe7050356d1beb24629abab8d5eeffc453bfafb7a7b06c08d661d2a1db18725f76f19b49133a425cc19a08319ae73a8fd2e23ec589b649ce1cf12c2'
+
 # Configuramos springboot con keycloak
 keycloak:
   realm: software
-  auth-server-url: http://192.168.0.3:8008
+  auth-server-url: '{cipher}d1d85c575dd2162b88eae531fc468e0024a9b39ec6ad69464ea53867846c8c259999f4f40bb152cb44760e8bbb153aaf'
   ssl-required: external
-  resource: backend
+  resource: '{cipher}fdd411a76ba06cb0c779973581fa2b15ed7a0cc30273cf61f5d2e5b824cca6b6'
   credentials:
-    secret: UlvIpt7xjtebLjZwHon1QnX0SSNLNqls
+    secret: '{cipher}efe70b5987d0dc08533198cd5e3d00caf72143e522ffce8bb6deb6410c5753eca0001f97a5ac60d4fc53ebd94411a5598121cbff85a301af944d3baba166e872'
   use-resource-role-mappings: false
   security-constraints:
     - authRoles:
